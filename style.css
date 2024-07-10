@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: hsl(217, 28%, 15%);
+    color:white;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    /* align-items: center; */
+
+}
+
+.nav-link ul{
+    display: flex;
+    gap:60px;
+    align-items: baseline;
+}
+
+.nav-link ul li{
+    list-style: none;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-link ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.Hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 732px;
+        margin: 0 auto;
+        text-align: center;
+        gap: 28px;
+        line-height: 1.5;
+        position: relative;
+        padding-bottom: 96px;
+}
+
+.Hero :nth-child(2){
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Hero :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    padding-inline: 58px;
+}
+
+
+.Hero button{
+    background-color: #4DC5D3;
+    padding: 15px 77px;
+    color: white;
+    border-radius: 49px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Hero button:hover{
+    background-color: #70f1ff;
+}
+
+.Raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+  .services{
+    background-color: hsl(218, 28%, 13%);
+    /* margin-top: 206px; */
+    display: flex;
+    flex-direction: column;
+    gap:82px;
+    padding-bottom: 151px;
+    min-height: 100vh;
+    padding-top: 102px;
+  }
+
+.div-1, .div-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-1 > div,
+.div-2 > div{
+    text-align: center;
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+
+
+
+.bg-c{
+    width: 100%;
+    position: absolute;
+    top: 818px;
+    z-index: -2;
+}
+
+
+.div-1 > div :nth-child(2),
+.div-2 > div :nth-child(2){
+    font-weight: 700;
+    font-size: 21px;
+}
+
+
+.div-1 > div :nth-child(3),
+.div-2 > div :nth-child(3){
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+.Info-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    gap: 63px;
+    padding-inline: 107px;
+}
+
+
+.Info-div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.3;
+}
+
+.Info-div > div > :nth-child(1){
+    font-size: 49px;
+    font-weight: 700;
+}
+
+.Info-div > div :nth-child(2),
+:nth-child(3),:nth-child(4){
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.CTA{
+    display: flex;
+    border-bottom: 2px solid hsl(198, 60%, 50%);
+    width: 182px;
+    padding-bottom: 3px;
+    gap:9px;
+    color: hsl(198, 60%, 50%);
+}
+
+.CTA:hover{
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.Testimonial{
+    /* padding-top: 150px; */
+    padding-inline: 100px;
+    padding-bottom: 50px;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    align-items: center;
+    gap:50px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    
+}
+
+.Testimonial > div{
+    padding: 50px 35px;
+    border-radius: 14px;
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: 0px 0px 20px 6px hsl(217, 28%, 15%);
+    position: relative;
+    
+}
+
+.Testimonial > :nth-child(1) > img{
+    position: absolute;
+    left: -13px;
+    top: -32px;
+    z-index: -1;
+
+}
+
+.d1{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.p1 img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.p1{
+    display: flex;
+    gap:10px;
+}
+
+.p1 > div :nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.p1 > div :nth-child(2){
+    font-size:10px;
+}
+
+.c1{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.footer-div{
+
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    padding-top: 131px;
+    padding-bottom: 91px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 94px;
+    padding-top: 37px;
+    cursor: pointer;
+    
+}
+
+.loc{
+    display: flex;
+    gap: 18px;
+    width: 374px;
+    align-items: baseline;
+}
+
+.loc > div{
+    font-size: 15px;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add > div{
+    display: flex;
+    gap: 39px;
+}
+
+
+.logo{
+    padding-left: 90px;
+    padding-top: 60px;
+}
+
+.div-3, .div-4{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    
+    
+}
+
+.div-3 div:hover , .div-4 div:hover{
+    font-weight: 700;
+}
+
+
+.div-5{
+    display: flex;
+    gap: 21px;
+}
+
+.div-5 i:hover{
+    color: skyblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: hsl(217, 28%, 15%);
+    max-width: 800px;
+    position: absolute;
+    padding: 50px;
+    border-radius: 13px;
+    gap: 20px;
+    text-align: center;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+    top: -127px;
+}
+
+
+.container > :nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+.container > :nth-child(3){
+    display: flex;
+    gap:20px
+}
+
+.container > :nth-child(3) > input{
+    padding: 12px 20px;
+    width: 399px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.container > :nth-child(3) > button{
+    background-color: #4DC5D3;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 49px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.container > :nth-child(3) > button:hover{
+    background-color: #70f1ff;
+    cursor: pointer;
+
+
+}
+
+@media (max-width:1000px) {
+    .Info-div{
+        flex-direction: column;
+    }
+
+    .Testimonial{
+        flex-direction: column;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap:58px;
+    }
+
+
+    .container > :nth-child(3){
+       flex-direction: column;
+    }
+
+    .container > :nth-child(3) > input{
+        padding: 12px 60px;
+    }
+
+    .div-1, .div-2{
+        flex-direction: column;
+        gap:56px;
+    }
+
+
+    .Info-div{
+    min-height: 100vh;
+    padding-bottom: 211px;
+    }
+
+    .footer-div{
+        padding-top: 256px;
+    }
+
+    .Testimonial{
+        padding-bottom: 338px;
+    }
+
+
+    
+.loc {
+    display: flex;
+    gap: 18px;
+    width: initial;
+    align-items: baseline;
+}
+.div-5 {
+
+    justify-content: center;
+
+}
+}
+
+
+
+
+
+
+
+@media (max-width:720px){
+
+    nav{
+        padding: 31px 20px;
+        gap:20px
+    }   
+    
+    nav > div img{
+        width: 70px;
+    }
+
+    nav ul{
+        padding: 0;
+       
+    }
+
+    .nav-link ul{
+        gap:30px;
+    }
+
+    .Hero{
+        padding-inline: 42px;
+    }
+
+    .Hero img{
+        width: 100%;
+    }
+
+    .Hero :nth-child(2) {
+        font-size: 24px;
+    }
+
+    .Hero :nth-child(3) {
+        font-weight: 400;
+        font-size: 16px;
+     padding-inline: 0;
+
+    }
+
+    .services {
+        padding-inline: 42px;
+
+    }
+
+    .div-1 > div, .div-2 > div {
+
+         width: initial;
+
+    }
+
+    .div-1 > div :nth-child(2), .div-2 > div :nth-child(2) {
+        font-weight: 700;
+        font-size: 21px;
+    }
+
+   
+        .Info-div {
+            padding-inline: 42px;
+        }
+    
+
+    
+.Info-div > div :nth-child(2),
+:nth-child(3),:nth-child(4){
+    font-size: 12px;
+}
+
+.Info-div > div > :nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.Info-div > :nth-child(1){
+    width: 100%;
+}
+
+
+.Testimonial {
+    flex-direction: column;
+    padding-inline: 42px;
+
+}
+
+.Testimonial > div {
+    padding: 39px 26px;
+
+
+}
+
+
+.c1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.container > :nth-child(1) {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo {
+    padding-left: 42px;
+    padding-top: 60px;
+}
+.logo > :nth-child(1){
+    width: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 42px;
+    padding-top: 37px;
+}
+
+
+.loc {
+    display: flex;
+    gap: 18px;
+    width: initial;
+    align-items: baseline;
+}
+
+.add > div {
+    display: flex;
+    gap: 17px;
+
+}
+
+.container{
+    max-width: initial;
+}
+
+.container > :nth-child(3) > input {
+     width: initial;
+
+}
+
+.CTA {
+    width: 123px;
+
+}
+
+.div-5 {
+
+    justify-content: center;
+}
+
+}
